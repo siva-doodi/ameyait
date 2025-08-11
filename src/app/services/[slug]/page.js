@@ -1,4 +1,3 @@
-'use client';
 
 import TextCard from '@/app/components/common/TextCard';
 import { useParams } from 'next/navigation';
