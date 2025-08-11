@@ -99,19 +99,19 @@ export default function Header() {
                         </button>
 
                         {/* Dropdown panel */}
-                        <div
-                            role="menu"
-                            aria-label="Services"
-                            className={`absolute  text-sm bg-white text-secondary-text font-[500] p-2 left-0 top-full mt-2 w-56 rounded-md border border-gray-600 bg-white shadow-lg z-50 transform transition-all duration-150
-                ${isServicesOpen ? 'opacity-100 visible pointer-events-auto translate-y-0' : 'opacity-0 invisible pointer-events-none -translate-y-1'}`}
-                        >
-                            <Link href="/services/web-development" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">Web Development</Link>
-                            <Link href="/services/app-development" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">App Development</Link>
-                            <Link href="/services/sap-services" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">SAP Services</Link>
-                            <Link href="/services/ai-ml" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">AI-ML</Link>
-                            <Link href="/services/cloud-services" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">Cloud Services</Link>
-                        </div>
-                    </div>
+                //         <div
+                //             role="menu"
+                //             aria-label="Services"
+                //             className={`absolute  text-sm bg-white text-secondary-text font-[500] p-2 left-0 top-full mt-2 w-56 rounded-md border border-gray-600 bg-white shadow-lg z-50 transform transition-all duration-150
+                // ${isServicesOpen ? 'opacity-100 visible pointer-events-auto translate-y-0' : 'opacity-0 invisible pointer-events-none -translate-y-1'}`}
+                //         >
+                //             <Link href="/services/web-development" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">Web Development</Link>
+                //             <Link href="/services/app-development" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">App Development</Link>
+                //             <Link href="/services/sap-services" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">SAP Services</Link>
+                //             <Link href="/services/ai-ml" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">AI-ML</Link>
+                //             <Link href="/services/cloud-services" role="menuitem" className="block px-4 py-2 hover:bg-pink-50">Cloud Services</Link>
+                //         </div>
+                //     </div>
 
                     <Link href="/about" className="hover:underline">About</Link>
                     <Link href="/careers" className="hover:underline">Careers</Link>
@@ -126,26 +126,26 @@ export default function Header() {
                 </nav>
 
                 {/* Mobile menu button */}
-                <div className="lg:hidden">
-                    <button
-                        onClick={() => setIsMobileMenuOpen((s) => !s)}
-                        className="text-primary-text focus:outline-none"
-                        aria-expanded={isMobileMenuOpen}
-                        aria-controls="mobile-menu"
-                    >
-                        {isMobileMenuOpen ? (
-                            /* close icon */
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        ) : (
-                            /* hamburger */
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        )}
-                    </button>
-                </div>
+                // <div className="lg:hidden">
+                //     <button
+                //         onClick={() => setIsMobileMenuOpen((s) => !s)}
+                //         className="text-primary-text focus:outline-none"
+                //         aria-expanded={isMobileMenuOpen}
+                //         aria-controls="mobile-menu"
+                //     >
+                //         {isMobileMenuOpen ? (
+                //             /* close icon */
+                //             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                //                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                //             </svg>
+                //         ) : (
+                //             /* hamburger */
+                //             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                //                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                //             </svg>
+                //         )}
+                //     </button>
+                // </div>
             </div>
 
             {/* Mobile Menu */}
